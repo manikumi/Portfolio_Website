@@ -38,6 +38,10 @@ body.dark-theme{
     background-color: var(--container-color);
 }
 
+.dark-theme .experience__card{
+    box-shadow: none;
+}
+
 .dark-theme::-webkit-scrollbar{
     background-color: hsl(var(--hue), 8%, 16%);
 }

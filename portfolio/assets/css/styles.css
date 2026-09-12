@@ -116,6 +116,10 @@ body.dark-theme {
   background-color: var(--container-color);
 }
 
+.dark-theme .experience__card {
+  box-shadow: none;
+}
+
 .dark-theme::-webkit-scrollbar {
   background-color: hsl(var(--hue), 8%, 16%);
 }
@@ -191,7 +195,16 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: 500;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin-bottom: .75rem;
+}
+
+.profile__description {
+  max-width: 36rem;
+  margin: 0 auto 1rem;
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 .profile__social {
@@ -402,6 +415,80 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
+/*=============== EXPERIENCE ===============*/
+.experience__content {
+  row-gap: 1.5rem;
+}
+
+.experience__card {
+  background-color: var(--container-color);
+  padding: 1.5rem 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px hsla(var(--hue), 24%, 4%, .08);
+}
+
+.experience__company {
+  font-size: var(--h3-font-size);
+}
+
+.experience__role {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin: .25rem 0 .15rem;
+}
+
+.experience__meta {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-bottom: .85rem;
+}
+
+.experience__list {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.experience__list li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: var(--small-font-size);
+  line-height: 1.55;
+}
+
+.experience__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .55rem;
+  width: .35rem;
+  height: .35rem;
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+
+/*=============== HIGHLIGHTS ===============*/
+.highlights__content {
+  row-gap: 2.5rem;
+}
+
+.highlights__list {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.highlights__item {
+  display: flex;
+  column-gap: .65rem;
+  align-items: flex-start;
+}
+
+.highlights__item i {
+  font-size: 1.15rem;
+  color: var(--first-color);
+  margin-top: .1rem;
+}
+
 /* Hide and show projects & skills */
 .filters [data-content] {
   display: none;
@@ -470,20 +557,31 @@ body.dark-theme {
   }
 
   .filters__content {
-    width: 332px;
+    width: 420px;
     margin: 3rem auto;
+  }
+
+  .experience__content {
+    grid-template-columns: 420px;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 776px) {
   .projects__content,
-  .skills__content {
+  .skills__content,
+  .highlights__content {
     grid-template-columns: repeat(2, 332px);
   }
 
-  .skills__content {
+  .skills__content,
+  .highlights__content {
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .experience__content {
+    grid-template-columns: 680px;
   }
 }
 

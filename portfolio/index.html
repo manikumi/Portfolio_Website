@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Manish Kumar S — Automation Test Engineer with 4 years of experience in UI and data validation testing.">
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
@@ -13,7 +14,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Manish Kumar S | Portfolio</title>
+        <title>Manish Kumar S | Automation Test Engineer</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -26,43 +27,54 @@
                     <div class="profile__border">
                         <div class="profile__perfil">
                             
-                            <img src="assets/img/pic.png" alt="">
+                            <img src="assets/img/pic.png" alt="Manish Kumar S">
                         </div>
                     </div>
 
                     <h2 class="profile__name">Manish Kumar S</h2>
-                    <h3 class="profile__profession">DevOps Engineer</h3>
-                    <h3 class="profile__profession">Work Experience- 2 Years</h3>
+                    <h3 class="profile__profession">Automation Test Engineer</h3>
+                    <p class="profile__description">
+                        4 years of experience in UI and data validation testing. I build scalable automation frameworks,
+                        improve coverage, and keep data integrity intact across Media, E-Commerce, and Banking domains.
+                    </p>
 
                     <ul class="profile__social">
-                        <!--<a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        --->
-                        <a href="https://www.linkedin.com/in/manish-kumar-s98/" target="_blank" class="profile__social-link">
+                        <a href="https://www.linkedin.com/in/manish-kumar-s98/" target="_blank" class="profile__social-link" aria-label="LinkedIn">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
-                        <a href="https://github.com/manikumi" target="_blank" class="profile__social-link">
+                        <a href="https://github.com/manikumi" target="_blank" class="profile__social-link" aria-label="GitHub">
                             <i class="ri-github-line"></i>
+                        </a>
+                        <a href="mailto:saimanishkumar11@gmail.com" class="profile__social-link" aria-label="Email">
+                            <i class="ri-mail-line"></i>
                         </a>
                     </ul>
                 </div>
 
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">4+</h3>
+                        <p class="profile__info-description">Years of<br>experience</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">UI &amp; ETL</h3>
+                        <p class="profile__info-description">Automation<br>focus</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">2</h3>
+                        <p class="profile__info-description">Excellence<br>awards</p>
+                    </div>
+                </div>
 
                 <div class="profile__buttons">
-                    <!-- Insert your CV -->
                     <a download="" href="assets/pdf/Manish Kumar S_Resume.pdf" class="button">
                         Download CV <i class="ri-download-line"></i>
                     </a>
 
                     <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        
-                            <a href="https://api.whatsapp.com/send?phone=+919986238980&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                            <a href="https://api.whatsapp.com/send?phone=+919986238980&text=Hello, more information!" target="_blank" class="button button__small button__gray" aria-label="WhatsApp">
                             <i class="ri-whatsapp-line"></i>
                         </a>
-                        <!-- Insert your brand name or profile -->
-                      
                     </div>
                 </div>
             </div>
@@ -73,42 +85,82 @@
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
                 <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#experience">
+                        Experience
+                    </button>
                     <button class="filters__button" data-target="#skills">
                         Skills
+                    </button>
+                    <button class="filters__button" data-target="#highlights">
+                        Highlights
                     </button>
                 </ul>
 
                 <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    
+                    <!--=============== EXPERIENCE ===============-->
+                    <div class="experience__content grid filters__active" data-content id="experience">
+                        <article class="experience__card">
+                            <h3 class="experience__company">Accenture</h3>
+                            <p class="experience__role">Packaged App Development Analyst</p>
+                            <p class="experience__meta">13 Sep 2024 – 02 Jun 2026 · Bengaluru, India</p>
+                            <ul class="experience__list">
+                                <li>Developed and ran automated ETL tests to validate source-to-target data flow, accuracy, and client requirements.</li>
+                                <li>Designed and maintained Java automation with a BDD Cucumber framework.</li>
+                                <li>Monitored ETL table loads, investigated discrepancies, and supported root-cause analysis with developers, BAs, and clients.</li>
+                                <li>Automated table-structure validation and mapping checks to cut regression effort.</li>
+                                <li>Presented results, defects, and quality metrics to stakeholders with actionable process insights.</li>
+                            </ul>
+                        </article>
+
+                        <article class="experience__card">
+                            <h3 class="experience__company">Capgemini Technology Services India Limited</h3>
+                            <p class="experience__role">Senior Analyst</p>
+                            <p class="experience__meta">05 Apr 2022 – 11 Sep 2024 · Bengaluru, India</p>
+                            <ul class="experience__list">
+                                <li>Built UI automation with Selenium and TestNG, plus customized Extent Reports for result analysis.</li>
+                                <li>Ran functional, regression, and smoke tests across browsers to improve defect detection and release quality.</li>
+                                <li>Worked with cross-functional teams to strengthen automation, cutting testing time by 60% and lifting productivity by 35%.</li>
+                                <li>Drove automation process improvements and kept client communication aligned with project goals.</li>
+                            </ul>
+                        </article>
+                    </div>
+
                     <!--=============== SKILLS ===============-->
                     <div class="skills__content grid" data-content id="skills">
                         <div class="skills__area">
-                            <h3 class="skills__title">DevOps Engineer</h3>
+                            <h3 class="skills__title">Test Automation</h3>
     
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">AWS Cloud</h3>
+                                            <h3 class="skills__name">Selenium WebDriver</h3>
+                                            <span class="skills__level">UI automation</span>
                                         </div>
                                     </div>
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">GitHub</h3>
+                                            <h3 class="skills__name">BDD Cucumber</h3>
+                                            <span class="skills__level">Framework</span>
                                         </div>
                                     </div>
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Jenkins</h3>
+                                            <h3 class="skills__name">TestNG</h3>
+                                            <span class="skills__level">Framework</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Postman</h3>
+                                            <span class="skills__level">API testing</span>
                                         </div>
                                     </div>
                                 </div>
@@ -116,106 +168,196 @@
                                 <div class="skills__group">
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
-                                       <div>
-                                            <h3 class="skills__name">Docker</h3>
+                                        <div>
+                                            <h3 class="skills__name">UI Testing</h3>
+                                            <span class="skills__level">Functional &amp; regression</span>
                                         </div>
                                     </div>
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Kubernets</h3>
+                                            <h3 class="skills__name">Accessibility Testing</h3>
                                         </div>
                                     </div>
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Ansible</h3>
+                                            <h3 class="skills__name">Java</h3>
+                                            <span class="skills__level">Automation scripts</span>
                                         </div>
                                     </div>
+
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Terraform</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Promethus, Grafana</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Shell Script</h3>
+                                            <h3 class="skills__name">Browser Stack</h3>
+                                            <span class="skills__level">Cross-browser</span>
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
 
                         <div class="skills__area">
-                            <h3 class="skills__title">Quality Engineer</h3>
+                            <h3 class="skills__title">Data, Tools &amp; Platforms</h3>
     
                             <div class="skills__box">
                                 <div class="skills__group">
-                                    
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Core Java</h3>
+                                            <h3 class="skills__name">ETL Testing</h3>
+                                            <span class="skills__level">End-to-end data flow</span>
                                         </div>
                                     </div>
-                                
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Selenium</h3>
+                                            <h3 class="skills__name">FPSL Testing</h3>
+                                            <span class="skills__level">Manual &amp; automation</span>
                                         </div>
                                     </div>
 
-                                    
-        
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">Web Automation</h3>
+                                            <h3 class="skills__name">SQL &amp; SAP HANA</h3>
                                         </div>
                                     </div>
-                                   
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Apache Airflow</h3>
+                                            <span class="skills__level">Orchestration</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Control-M</h3>
+                                            <span class="skills__level">Workflow</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <div class="skills__group">
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">API Automation</h3>
+                                            <h3 class="skills__name">GitHub &amp; GitLab</h3>
+                                            <span class="skills__level">GitHub Copilot</span>
                                         </div>
                                     </div>
         
                                     <div class="skills__data">
                                         <i class="ri-checkbox-circle-line"></i>
-        
                                         <div>
-                                            <h3 class="skills__name">BDD Cucumber Framework, TestNG Framework, REST Assured </h3>
+                                            <h3 class="skills__name">Azure DevOps</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Jira &amp; Pivotal Tracker</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">IntelliJ IDEA &amp; Eclipse</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Domain</h3>
+                                            <span class="skills__level">Media, E-Commerce, BFSI</span>
                                         </div>
                                     </div>
                                 </div>
-                                 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=============== HIGHLIGHTS ===============-->
+                    <div class="highlights__content grid" data-content id="highlights">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Awards</h3>
+                            <div class="highlights__list">
+                                <div class="highlights__item">
+                                    <i class="ri-star-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">ATCI APAC All Star</h3>
+                                        <span class="skills__level">Accenture · 2025</span>
+                                    </div>
+                                </div>
+                                <div class="highlights__item">
+                                    <i class="ri-star-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Delivery Excellence</h3>
+                                        <span class="skills__level">Capgemini · 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Certificates</h3>
+                            <div class="highlights__list">
+                                <div class="highlights__item">
+                                    <i class="ri-medal-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">AWS Certified Cloud Practitioner</h3>
+                                        <span class="skills__level">Amazon Web Services</span>
+                                    </div>
+                                </div>
+                                <div class="highlights__item">
+                                    <i class="ri-medal-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Prompt Engineer for ChatGPT</h3>
+                                        <span class="skills__level">Udemy</span>
+                                    </div>
+                                </div>
+                                <div class="highlights__item">
+                                    <i class="ri-medal-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Generative AI</h3>
+                                        <span class="skills__level">Udemy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Education</h3>
+                            <div class="highlights__list">
+                                <div class="highlights__item">
+                                    <i class="ri-graduation-cap-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">B.E.</h3>
+                                        <span class="skills__level">Visveswaraya Technological University · 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Languages</h3>
+                            <div class="highlights__list">
+                                <div class="highlights__item">
+                                    <i class="ri-translate"></i>
+                                    <div>
+                                        <h3 class="skills__name">English · Kannada</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -226,7 +368,7 @@
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
             <span class="footer__copy">
-                &#169; Manish Kumar S. All rigths reserved
+                &#169; Manish Kumar S. All rights reserved
             </span>
         </footer>
 

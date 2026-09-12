@@ -116,6 +116,77 @@
     }
 }
 
+/*=============== EXPERIENCE ===============*/
+.experience{
+    &__content{
+        row-gap: 1.5rem;
+    }
+    &__card{
+        background-color: var(--container-color);
+        padding: 1.5rem 1.25rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 24px hsla(var(--hue), 24%, 4%, .08);
+    }
+    &__company{
+        font-size: var(--h3-font-size);
+    }
+    &__role{
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+        color: var(--title-color);
+        margin: .25rem 0 .15rem;
+    }
+    &__meta{
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+        margin-bottom: .85rem;
+    }
+    &__list{
+        display: grid;
+        row-gap: .5rem;
+
+        li{
+            position: relative;
+            padding-left: 1rem;
+            font-size: var(--small-font-size);
+            line-height: 1.55;
+
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: .55rem;
+                width: .35rem;
+                height: .35rem;
+                border-radius: 50%;
+                background-color: var(--first-color);
+            }
+        }
+    }
+}
+
+/*=============== HIGHLIGHTS ===============*/
+.highlights{
+    &__content{
+        row-gap: 2.5rem;
+    }
+    &__list{
+        display: grid;
+        row-gap: 1rem;
+    }
+    &__item{
+        display: flex;
+        column-gap: .65rem;
+        align-items: flex-start;
+
+        i{
+            font-size: 1.15rem;
+            color: var(--first-color);
+            margin-top: .1rem;
+        }
+    }
+}
+
 /* Hide and show projects & skills */
 .filters [data-content]{
     display: none;
